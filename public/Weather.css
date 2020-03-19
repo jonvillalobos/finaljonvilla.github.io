@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:"header header"
+                        "city temp"
+                        "city humidity";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 55px 1fr 1fr;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.1);
+
+}
+
+header {
+    grid-area: header;
+    padding: 10px;
+    border-radius: 25px 25px;
+    text-align: center;
+}
+
+header input {
+    outline: none;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.city {
+    color: #FFB6C1;
+    grid-area: city;
+    display: flex;
+
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.temperature{
+    color: #FFB6C1;
+    grid-area: temp;
+    display: flex;
+
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.humidity{
+    color: #FFB6C1;
+    grid-area: humidity;
+    display: flex;
+
+    align-items: center;
+    font-size: 3em;   
+    font-weight: bold;
+}
+
+body {
+    background-image: url("lapraswallpaper.png");
+    background-color: #B0C4DE;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.back{
+    color:white;
+}
